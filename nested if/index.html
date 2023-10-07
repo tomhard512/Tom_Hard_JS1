@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percabangan Nested if</title>
+</head>
+<body>
+    <script>
+        var nilai = prompt("Masukkan Nilai Anda:");
+        var grade = "";
+
+        if (nilai >= 100) {
+            grade = "A"
+        }else if (nilai >=95) { 
+            grade = "B+"
+        }else if (nilai >=85) { 
+            grade = "B+"
+        }else if (nilai >=80) { 
+            grade = "B-"
+        }else if (nilai >=75) { 
+            grade = "C"
+        }else if (nilai >=70) { 
+            grade = "D"
+        }else if (nilai >=65) { 
+            grade = "E"
+        }else { 
+            grade = "F";
+        }
+        document.write(`<p>Grade anda: ${grade}</p>`);
+    </script>
+</body>
+</html>

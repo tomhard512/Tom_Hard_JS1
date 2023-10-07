@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percabangan switch case</title>
+</head>
+<body>
+    <script>
+        var jawab = prompt("Kamu lagi beruntung saja!,Silakan pilih hadiahmu dengan memasukkan angka 1-5");
+        var hadiah = "";
+
+        switch(jawab) {
+            case "1":
+                hadiah = "Tisu Magic";
+                break;
+            case "2":
+                hadiah = "Bola Rusak";
+                break;
+            case "3":
+                hadiah = "Baju Bekas";
+                break;
+            case "4":
+                hadiah = "Tong Sampah";
+                break;
+            case "5":
+                hadiah = "Mobil Tanpa Ban";
+                break;
+            default:
+                document.write("<p>Opps! Maaf Anda salah tekan blok</p>");    
+        }
+
+        if(hadiah ==="") {
+            document.write("<p>Kamu gagal mendapatkan hadiah bro</p>");
+        }else {
+            document.write("<h2>Selamat Anda mendapatkan hadiah " + hadiah + "</h2>");
+        }
+    </script>
+</body>
+</html>

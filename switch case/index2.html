@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percabangan switch case</title>
+</head>
+<body>
+    <script>
+        var nilai = prompt("Masukkan Nilai Anda");
+        var grade = ""
+
+        switch(true){
+            case nilai < 100:
+                grade = "A";
+                break;
+            case nilai < 95:
+                grade = "b+";
+                break;
+            case nilai < 90:
+                grade = "B-";
+                break;
+            case nilai < 80:
+                grade = "C+";
+                break;
+            case nilai < 75:
+                grade = "C-";
+                break;
+            case nilai < 65:
+                grade = "D";
+                break;
+            case nilai < 55:
+                grade = "E";
+                break;
+            default:
+                grade = "F";
+        }    
+    </script>
+</body>
+</html>
